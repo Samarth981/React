@@ -1,0 +1,2 @@
+<!-- https://semaphoreci.com/blog/vite --> why i am use vite? 
+jsx -> babel(tuel use to conver jsx to js) -> js
