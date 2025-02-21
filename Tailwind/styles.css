@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box{
+    @apply m-4 font-extrabold p-2;
+}

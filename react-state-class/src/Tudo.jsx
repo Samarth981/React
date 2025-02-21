@@ -124,7 +124,7 @@ export default function Tudo() {
       <button onClick={upperCaseAll}>UperCase all</button>
       <br />
       <br />
-      <button onClick={isDoneAll}>UperCase all</button>
+      <button onClick={isDoneAll}>Done task</button>
     </div>
   );
 }
