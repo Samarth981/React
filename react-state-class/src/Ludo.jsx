@@ -13,8 +13,8 @@ export default function Counter() {
 
     //use spread operator
     // setMoves({ ...moves, blue: moves.blue + 1 }); //in there new value blue is depend on old value so use CallBack
-    setMoves((currValue) => {
-      return { ...currValue, blue: currValue.blue + 1 };
+    setMoves((prevalue) => {
+      return { ...prevalue, blue: prevalue.blue + 1 };
     });
   };
 
@@ -25,7 +25,7 @@ export default function Counter() {
     });
   };
 
-  //   same consept in Array
+  //   same concept in Array
   let updateRed = () => {
     setArr((arrValue) => {
       return [...arrValue, 'red is move'];

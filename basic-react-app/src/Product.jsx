@@ -32,7 +32,7 @@ import './Product.css';
 //add condition
 
 function Product({ title, price = 1 }) {
-  //method 1
+  // method 1
   // if (price > 30000) {
   //   return (
   //     <div className="Product">

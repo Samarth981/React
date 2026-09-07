@@ -1,31 +1,31 @@
-import { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
-import './Tudo.css';
+import { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+import "./Tudo.css";
 
-export default function Tudo() {
+export default function Todo() {
   //store in arr
   //   let [todo, setTodo] = useState(['sample test']);
 
   let [todo, setTodo] = useState([
-    { task: 'sample test', id: uuidv4(), isDone: false },
+    { task: "sample test", id: uuidv4(), isDone: false },
   ]); //arr of object
 
-  let [valueUpdate, setValueUpdate] = useState(''); //this is update input value
+  let [valueUpdate, setValueUpdate] = useState(""); //this is update input value
 
   let addNewTask = () => {
-    setTodo((cuuTudo) => {
-      return [...cuuTudo, { task: valueUpdate, id: uuidv4(), isDone: false }];
+    setTodo((cuuTodo) => {
+      return [...cuuTodo, { task: valueUpdate, id: uuidv4(), isDone: false }];
     }); //update value store and state change
 
-    setValueUpdate(''); //after store value remove input filde
+    setValueUpdate(""); //after store value remove input filed
+  };
+
+  let deleteTodo = (id) => {
+    setTodo((cuurTodo) => todo.filter((cuurTodo) => cuurTodo.id != id));
   };
 
   let updateValue = (event) => {
     setValueUpdate(event.target.value);
-  };
-
-  let deleteTudo = (id) => {
-    setTodo((cuurTudo) => todo.filter((cuurTudo) => cuurTudo.id != id));
   };
 
   //update all element of arraay
@@ -103,12 +103,12 @@ export default function Tudo() {
           return (
             <li key={value.id}>
               <span
-                style={value.isDone ? { textDecoration: 'line-through' } : {}}
+                style={value.isDone ? { textDecoration: "line-through" } : {}}
               >
                 {value.task}
               </span>
               &nbsp; &nbsp; &nbsp;
-              <button onClick={() => deleteTudo(value.id)}>Delete</button>
+              <button onClick={() => deleteTodo(value.id)}>Delete</button>
               &nbsp;
               <button onClick={() => upperCaseOne(value.id)}>uppercase</button>
               &nbsp;

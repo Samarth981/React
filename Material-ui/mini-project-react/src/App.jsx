@@ -7,6 +7,7 @@ import Sample from './Sample.jsx';
 import WeatherApp from './WeatherApp.jsx';
 
 import './App.css';
+import Setting from './page/Setting.jsx';
 
 // function App() {
 //   return (
@@ -21,7 +22,7 @@ import './App.css';
 function App() {
   return (
     <>
-      <WeatherApp />
+      <Setting />
     </>
   );
 }

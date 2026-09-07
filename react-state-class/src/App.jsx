@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import Counter from './Counter.jsx';
-import Likebtn from './Likebtn.jsx';
-import Ludo from './Ludo.jsx';
-import Tudo from './Tudo.jsx';
-import Lottery from './Lottery.jsx';
-import UpdateLottery from './UpdateLottery.jsx';
-import { sum } from './helper.js';
-import Form from './Form.jsx';
-import CommentForm from './CommentForm.jsx';
-import CommentShow from './CommentShow.jsx';
-import UseEffect from './UseEffect.jsx';
-import Jocker from './Jocker.jsx';
-import './App.css';
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import Counter from "./Counter.jsx";
+import Likebtn from "./Likebtn.jsx";
+import Ludo from "./Ludo.jsx";
+import Tudo from "./Tudo.jsx";
+import Lottery from "./Lottery.jsx";
+import UpdateLottery from "./UpdateLottery.jsx";
+import { sum } from "./helper.js";
+import Form from "./Form.jsx";
+import CommentForm from "./CommentForm.jsx";
+import CommentShow from "./CommentShow.jsx";
+import UseEffect from "./UseEffect.jsx";
+import Jocker from "./Jocker.jsx";
+import "./App.css";
 
 // function App() {
 //   return (
@@ -81,12 +81,12 @@ import './App.css';
 //   );
 // }
 
-function App() {
-  return (
-    <>
-      <Jocker />
-    </>
-  );
-}
+// function App() {
+//   return (
+//     <>
+//       <Jocker />
+//     </>
+//   );
+// }
 
 export default App;

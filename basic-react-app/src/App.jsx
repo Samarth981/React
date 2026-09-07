@@ -1,7 +1,8 @@
-import './App.css';
-// import Title from './Title.jsx';
-// import ProductTab from './ProductTab.jsx';
-// import MsgBox from './msgBox.jsx';
+import "./App.css";
+import Title from "./Title.jsx";
+import ProductTab from "./ProductTab.jsx";
+import MsgBox from "./msgBox.jsx";
+import Form from "./Form.jsx";
 
 // function App() {
 //   return (
@@ -12,6 +13,7 @@ import './App.css';
 //   );
 // }
 
+//React Fragment
 // function App() {
 //   return (
 //   <>
@@ -54,8 +56,6 @@ import './App.css';
 // }
 
 //Form
-
-import Form from './Form.jsx';
 
 function App() {
   return (
